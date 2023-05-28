@@ -1,16 +1,4 @@
-//  ---------start_pic-----------  \\
-var pic = document.querySelector("#write");
-	function hide(){
-	pic.style.display = "none";
-	}
-    function show(){
-        pic.style.display = "block";
-   
-     
-  
 
-   };  
-    //  ---------end_pic-----------  \\ 
 
    //  ---------start_tabs-----------  \\
    const tab1 = document.querySelector(".tab1");
@@ -37,20 +25,16 @@ var pic = document.querySelector("#write");
     content2.classList.remove("show");
     content3.classList.add("show");
    });
-   tab4.addEventListener("click", function(){
-    content1.classList.remove("show");
-    content2.classList.remove("show");
-    content3.classList.remove("show");
-   });
-   //  ---------end_tabs-----------  \\
+//  ---------end_tabs-----------  \\
 
    //  ---------start_mod-----------  \\
+  //  ----------- light mod ------------\\
    const light = document.querySelector(".light");
    const body = document.querySelector(".body");
    light.addEventListener("click", function(){
      body.style.backgroundColor = "white";    
    });
-
+// ---------------dark mod -----------------\\
    const dark = document.querySelector(".dark");
    dark.addEventListener("click", function(){
      body.style.backgroundColor = "black";    
