@@ -1,30 +1,27 @@
 
 
    //  ---------start_tabs-----------  \\
-   const tab1 = document.querySelector(".tab1");
-   const tab2 = document.querySelector(".tab2");
-   const tab3 = document.querySelector(".tab3");
-   
-   const content1 = document.querySelector(".content1");
-   const content2 = document.querySelector(".content2");
-   const content3 = document.querySelector(".content3");
-   
-  tab1.addEventListener("click", function(){
-    content1.classList.add("show");
-    content2.classList.remove("show");
-    content3.classList.remove("show");
-   });
-   
-   tab2.addEventListener("click", function(){
-    content1.classList.remove("show");
-    content2.classList.add("show");
-    content3.classList.remove("show");
-   });
-   tab3.addEventListener("click", function(){
-    content1.classList.remove("show");
-    content2.classList.remove("show");
-    content3.classList.add("show");
-   });
+
+
+function hideShow(item){
+  const divs = document.querySelectorAll("div")
+  item.onclick = () => {
+      divs.forEach(div => {
+          div.classList.remove("show")
+      })
+      document.querySelector(`.${item.dataset.div}`).classList.add("show")
+  }
+}
+
+window.onload = () => {
+  const navItems = document.querySelectorAll("li")
+  navItems.forEach(item => {
+      item.onclick = () => {
+          hideShow(item)
+      }
+  })
+}
+
 //  ---------end_tabs-----------  \\
 
    //  ---------start_mod-----------  \\
