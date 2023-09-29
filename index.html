@@ -1,276 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-     crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      .season {
+        display: none;
+      }
+      .show2 {
+        display: flex;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Dragon Ball
-    </title>
-</head>
-<body class="body">
-    
+
+    <title>Dragon Ball</title>
+  </head>
+  <!-- https://images.alphacoders.com/113/1138128.jpg -->
+  <body class="w-[100%]">
     <header>
-    <nav id="ert">
-        <h1 id="uty">Dragon Ball
-        </h1>
-        <br>
-        
-        <ul class="ul">
-          <h1 class="light">☼</h1>
-        
-        <h1 class="dark">☽</h1>
-            <li data-div="content1">HOME</li>
-            <li data-div="content2">PHOTO</li>
-            <li data-div="content3">FIGURES</li>
+      <nav
+        class="bg-[#FC5404] text-white p-t[30px] flex items-center justify-between"
+      >
+        <img
+          class="w-[15rem] h-[6rem] p-[5px]"
+          src="https://freepngimg.com/save/22929-dragon-ball-logo-clipart/800x181"
+          alt=""
+        />
+
+        <ul class="flex gap-[100px]">
+          <li
+            data-div="content1"
+            class="hover:cursor-pointer hover:bg-[#F9B208] p-[1rem]"
+          >
+            <a href="./index.html"> HOME</a>
+          </li>
+          <li
+            data-div="content2"
+            class="hover:cursor-pointer hover:bg-[#F9B208] p-[1rem]"
+          >
+            <a href="./photo/index.html">PHOTO</a>
+          </li>
+          <li
+            data-div="content3"
+            class="hover:cursor-pointer hover:bg-[#F9B208] p-[1rem]"
+          >
+            <a href="./figure/index.html"> FIGURES</a>
+          </li>
         </ul>
-                                           
-  
-    </nav>
+        <article class="text-[1.5rem]">
+          <i class="ri-moon-fill"></i>
+        </article>
+      </nav>
     </header>
-    <!-- start content 1 -->
 
-    <div class=" content1 show">
-     <img  src="img/all.jpg" alt="">
-      <br>
-      <h1>Dragon Ball <br>
-        <br></h1>
-      <h2 class="character">
-       
-       Dragon Ball is a Japanese media franchise
-        created by Akira Toriyama in 1984. It has
-         five anime installments based on the franchise 
-         that have been produced by Toei Animation: Dragon
-          Ball (1986); Dragon Ball Z (1989); Dragon Ball GT 
-          (1996); and Dragon Ball Super(2015); followed by the
-           web series Super Dragon Ball Heroes (2018).
-      </h2>
+    <!-- Slider main container -->
+
+    <div class="swiper h-[30rem]">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div
+          class="swiper-slide w-[100rem]"
+          style="
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://cdn.riddle.com/embeds/v2/images/q_80,c_fill,w_960,h_540/80f/80f1a5c9b6814e9ad20f188a47733b1f.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide w-[100rem]"
+          style="
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://i.ytimg.com/vi/wHAaKXtfSOg/maxresdefault.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide w-[100rem]"
+          style="
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b1b0c1281f51264bdb40eadefbbd4d24.jpg');
+          "
+        ></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-<!-- end content 1 -->
-        
-    
+
     <!-- start content 2 -->
-<div class="content2 , place-content-ceneter" >
-  <section class="photoSection">
-    <img id="photoTab" src="img/0.jpg">
-    <br>
-<img id="photoTab" src="img/1.jpg">
-<br>
-<img id="photoTab" src="img/3.png" alt="">
-<br>
-<img id="photoTab" src="img/4.jpg">
-<br>
-<img id="photoTab" src="img/5.jpg">
-<br>
-<img id="photoTab" src="img/6.jpg" alt="">
-<br>
-<img id="photoTab" src="img/7.jpg" alt="">
-<br>
-<img id="photoTab" src="img/8.jpg" alt="">
-<br>
-<img id="photoTab" src="img/9.jpg" alt="">
-<br>
-<img id="photoTab" src="img/10.jpg" alt="">
-<br>
-<img id="photoTab" src="img/12.png" alt="">
-<br>
-<img id="photoTab" src="img/13.png" alt="">
+    <h1 class="text-center text-[35px] font-black p-[5px] m-[10px]">
+      Dragon Ball Seasons
+    </h1>
+    <div class="seasons-div m-[10px] flex w-[100%] justify-center">
+      <div
+        class="seasons text-center bg-[#F9B208] h-[27rem] w-[80rem] text-white p-[30px] rounded-[10px]"
+      >
+        <ul
+          class="border-b m-[10px] pb-[10px] p-[10px] flex justify-center align-center gap-[50px]"
+        >
+          <li data-div="season1" class="hover:cursor-pointer">season1</li>
+          <li data-div="season2" class="hover:cursor-pointer">season2</li>
+          <li data-div="season3" class="hover:cursor-pointer">season3</li>
+        </ul>
 
-</section>
-</div>
-<!-- end content 2 -->
+        <div
+          class="season season1 show2 justify-between gap-[10px] m-[20px] items-center"
+        >
+          <img
+            class="p-[5px] rounded-[10px] w-[40rem] h-[20rem]"
+            src="https://sportshub.cbsistatic.com/i/2021/03/18/d12f05a5-8401-4449-bf7d-186f1504e86e/dragon-ball-super-ending-z-fighters-team-reunion-1237292.jpg"
+            alt=""
+          />
+          <p>
+            Dragon Ball Z[c] is a Japanese anime television series produced by
+            Toei Animation. Part of the Dragon Ball media franchise, it is the
+            sequel to the 1986 Dragon Ball anime series and adapts the latter
+            325 chapters of the original Dragon Ball manga series created by
+            Akira Toriyama. The series aired in Japan on Fuji TV from April 1989
+            to January 1996 and was later dubbed for broadcast in at least 81
+            countries worldwide.
+          </p>
+        </div>
+        <div
+          class="season season2 justify-between gap-[10px]m-[20px] items-center"
+        >
+          <img
+            class="p-[5px] rounded-[10px] w-[40rem] h-[20rem]"
+            src="https://lh3.googleusercontent.com/-vdzkqEnFg1c/Yo7g6M89EGI/AAAAAAAAt0o/urwiIy8iOB8vxOdRQoXGTvZWpcA5HJmZACNcBGAsYHQ/w1280-h720-p-k-no-nu/Episodes-Dragon-Ball-Super-Filler-List-Order-to-Watch.jpg"
+            alt=""
+          />
+          <p>
+            Dragon Ball Super (Japanese: ドラゴンボール超, Hepburn: Doragon Bōru
+            Sūpā) is a Japanese manga series written by Akira Toriyama and
+            illustrated by Toyotarou. Set during the time frame of Toriyama's
+            original Dragon Ball manga, it follows the adventures of Son Goku
+            and friends during the ten-year timeskip after the defeat of Majin
+            Boo.[3] It began serialization in Shueisha's monthly shōnen manga
+            magazine V Jump in June 2015. The manga is simulpublished in English
+            by Viz Media and by Shueisha on their Manga Plus platform.
+          </p>
+        </div>
+        <div
+          class="season season3 justify-between gap-[10px] m-[20px] items-center"
+        >
+          <img
+            class="p-[5px] rounded-[10px] w-[40rem] h-[20rem]"
+            src="https://cdn.vox-cdn.com/thumbor/X31s2HQJs6dzWKsW9iCi43I4nV8=/1400x788/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/11501473/Screen_Shot_2018_06_08_at_9.56.41_AM.png"
+            alt=""
+          />
+          <p>
+            Super Dragon Ball Heroes (Japanese:
+            スーパードラゴンボールヒーローズ, Hepburn: Sūpā Doragon Bōru Hīrōzu)
+            is a Japanese original net animation and promotional anime series
+            for the card and video games of the same name. The series premiered
+            on July 1, 2018, and was produced by Toei Animation without the
+            involvement of Dragon Ball creator Akira Toriyama.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center text-[35px] font-black p-[5px] m-[10px]">
+      <a href="./photo/index.html" class="no-underline text-black"
+        >Dragon Ball Photos</a
+      >
+    </h1>
+    <section class="flex justify-center flex-wrap">
+      <img src="../img/0.jpg" class="w-[430px] h-[350px] rounded-xl m-[10px]" />
 
-<!-- start content 3 -->
+      <img src="../img/1.jpg" class="w-[430px] h-[350px] rounded-xl m-[10px]" />
 
-<div class="content3">
-<figure>
-   <!-- start goku -->
-  <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/goku.jpg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Kakarot</h1>
-    <p class="card-text">Kakarot or Goku is one of the heroes of the cartoon series 
-      Dragon Ball and is the strongest character in the series
-      and has two sons Gohan and Goten and his stubborn friend Vegeta
-      and is present in all parts of the series
-       </p>
-   </section>
-   </section> 
+      <img src="../img/3.png" class="w-[430px] h-[350px] rounded-xl m-[10px]" />
 
-<!-- end goku -->
+      <img src="../img/4.jpg" class="w-[430px] h-[350px] rounded-xl m-[10px]" />
+      <img src="../img/5.jpg" class="w-[430px] h-[350px] rounded-xl m-[10px]" />
+      <img src="../img/6.jpg" class="w-[430px] h-[350px] rounded-xl m-[10px]" />
+    </section>
 
-<!-- start vegeta -->
+    <h1 class="text-center text-[35px] font-black p-[5px] m-[10px]">
+      <a href="./figure/index.html" class="no-underline text-black"
+        >Dragon Ball Characters</a
+      >
+    </h1>
+    <figure class="flex w-[100%] justify-center flex-wrap">
+      <section
+        class="w-[320px] h-[400px] m-[10px] rounded-xl border-2 p-[5px] border-black"
+      >
+        <img class="rounded-t-xl" src="img/goku.jpg" alt="" />
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/vegeta.jpg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Vegeta</h1>
-    <p class="card-text">Vegeta, one of the heroes of the cartoon series Dragon Ball,
-      is a Saiyan, one of Kakarot's friends and does not want to admit it.
-      He has a son and a daughter, Trunks and Paula, who is the first to go to
-     the planet Beros
-       </p>
-   </section>
-   </section> 
+        <section>
+          <h1 class="font-extrabold text-center text-[20px]">Kakarot</h1>
+          <p class="text-center">
+            Kakarot or Goku is one of the heroes of the cartoon series Dragon
+            Ball and is the strongest character in the series and has two sons
+            Gohan and Goten and his stubborn friend Vegeta and is present in all
+            parts of the series
+          </p>
+        </section>
+      </section>
 
-   <!-- end vegeta -->
+      <!-- end goku -->
 
-   <!-- start tranks -->
+      <!-- start vegeta -->
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/tranks.jpeg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Tranks</h1>
-    <p class="card-text">Trunks is the son of Vegeta and there are two future
-      and the present and he can turn into a Super Saiyan and the future
-      appeared twice in the arc of Android and Ciel and in the arc of Goku 
-      Black
-       </p>
-   </section>
-   </section> 
+      <section
+        class="w-[320px] h-[400px] m-[10px] rounded-xl border-2 p-[5px] border-black"
+      >
+        <img class="rounded-t-xl" src="img/vegeta.jpg" alt="" />
 
-   <!-- end tranks  -->
+        <section>
+          <h1 class="font-extrabold text-[20px] text-center">Vegeta</h1>
+          <p class="text-center">
+            Vegeta, one of the heroes of the cartoon series Dragon Ball, is a
+            Saiyan, one of Kakarot's friends and does not want to admit it. He
+            has a son and a daughter, Trunks and Paula, who is the first to go
+            to the planet Beros
+          </p>
+        </section>
+      </section>
 
-   <!-- start frieza -->
+      <!-- end vegeta -->
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/friza2.jpg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Frieza</h1>
-    <p class="card-text">Frieza, one of the villains in Dragon Ball,
-      has six forms, and he is the tastiest enemy of Goku,
-      who is the one who blew up the planet Vegeta and killed
-      Goku and Vegeta's parents, and Goku and Vegeta took revenge 
-      on him when he grew up
-       </p>
-   </section>
-   </section> 
-   <!-- end frieza -->
+      <!-- start tranks -->
 
-   <!-- start bardock -->
+      <section
+        class="w-[320px] h-[400px] m-[10px] rounded-xl border-2 p-[5px] border-black"
+      >
+        <img class="rounded-t-xl" src="img/tranks.jpeg" alt="" />
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/bardock.webp" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Bardock</h1>
-    <p class="card-text">Barduk is one of 
-      the Saianz, Goku's father, he was the 
-      first to fight the evil Friesa and he has another son named Raditz 
-      and he was killed by Friesa when the planet Vegeta was destroyed. 
-       </p>
-   </section>
-   </section>
-   
-   <!-- end bardock -->
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/piccolo.jpeg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Piccolo</h1>
-    <p class="card-text">Piccolo was Goku's enemy, but after
-       he defeated him and the Saianz attacked them, they became 
-       friends, and he trained Gohan,Goku's son, since he was young,
-        and he became a strong fighter. 
-       
-       </p>
-   </section>
-   </section>
+        <section>
+          <h1 class="font-extrabold text-[20px] text-center">Tranks</h1>
+          <p class="text-center">
+            Trunks is the son of Vegeta and there are two future and the present
+            and he can turn into a Super Saiyan and the future appeared twice in
+            the arc of Android and Cell and in the arc of Goku Black
+          </p>
+        </section>
+      </section>
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/gohan.jpeg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Gohan</h1>
-    <p class="card-text">Gohan, Goku's eldest son, was the first to
-         turn into Super Saiyan 2, and Piccolo had trained him since he
-         was young, because he saw the strength he showed when they fought
-         Raditz, he did great damage. When he grew up, he married the 
-         daughter of world champion Fidel, and he has a little
-         girl named Pan. 
-       </p>
-   </section>
-   </section>
+      <!-- end tranks  -->
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/beros.jpg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Beros</h1>
-    <p class="card-text">Beros , the leader of the destruction of the 
-      seventh world, wanted to destroy the earth because he did not eat 
-      pudding and did not find the amazing Saiyans leader, but Goku
-       gained the power of the amazing Saian leader andfought him, and
-        Goku lost, but Perus did not destroy the Earth.  
-       </p>
-   </section>
-   </section>
+      <!-- start frieza -->
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/whis.jpeg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Whis</h1>
-    <p class="card-text">Whis is Daishunkan, assistant to the Seventh World Destruction leader Beros
-      And his father is the great Daishinkan, assistant to the leader Zeno, and he was spared from doom 
-      in the Tournament of Universes. 
-       </p>
-   </section>
-   </section>
+      <section
+        class="w-[320px] h-[400px] m-[10px] rounded-xl border-2 p-[5px] border-black"
+      >
+        <img class="rounded-t-xl" src="img/friza2.jpg" alt="" />
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/zeno.jpeg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Zeno</h1>
-    <p class="card-text">
-      Zeno is the leader of the 12 worlds, he can destroy everything in 
-      one moment, and he is Goku's friend and assistant, the great 
-      Daishunkan. 
-       </p>
-   </section>
-   </section>
+        <section>
+          <h1 class="font-extrabold text-[20px] text-center">Frieza</h1>
+          <p class="text-center">
+            Frieza, one of the villains in Dragon Ball, has six forms, and he is
+            the tastiest enemy of Goku, who is the one who blew up the planet
+            Vegeta and killed Goku and Vegeta's parents, and Goku and Vegeta
+            took revenge on him when he grew up
+          </p>
+        </section>
+      </section>
+    </figure>
 
-   <section class="card , kakarot ">
-    <img class="card-img-top " 
-       src="img/goku black.jpeg" alt=""  >
-       
-       <section class="card-body">
-    <h1 class="card-title , text-warning , text-center">Goku Black</h1>
-    <p class="card-text">Black Goku, who is Kayo Zamasu, wants to achieve justice, 
-      so he killed his teacher, Gowasu, to steal the earrings, use the time ring, 
-      and collect Dragon Ball balls to replace his body with Goku's body, kill him, 
-      kill his family, and destroy the land to achieve his plan, but Trunks gathered 
-      the energies of people and eliminated Black and destroyed the leader Zeno the 
-      planet to get rid of them, so he killed them both.
-       </p>
-   </section>
-   </section>
-   
-  </figure>
-</div>
-
-<!-- end content 3 -->
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
- crossorigin="anonymous"></script>
-     <script src="js/script.js"></script>
-</body>
+    <footer class="bg-[#FC5404] text-center p-[15px] text-white">
+      @copyRightSaved
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
